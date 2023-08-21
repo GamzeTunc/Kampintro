@@ -10,8 +10,15 @@ namespace Genericsİntro
             MyList<string> isimler = new MyList<string>();// ne tipte old söyledim istersen kendi oluşturduğun classı ver tip olarak 
             isimler.Add("Engin");//yukarıda string olunca T de string olarakj kabullenir.
 
-            MyList<string> myList = new MyList<string>();
-            myList.Add("Gamze");
+            Console.WriteLine(isimler.Length);
+
+            isimler.Add("Gamze");
+            Console.WriteLine(isimler.Length);
+
+            foreach (var isim in isimler.Items)
+            {
+                Console.WriteLine(isim);
+            }
 
         }
     }

@@ -28,5 +28,15 @@ namespace Genericsİntro
             }
             items[items.Length - 1] = item;
         }
+
+        public int Length //int old için sayı 
+        {
+            get { return items.Length; }
+        }
+
+        public T[] Items
+        {
+            get { return items; }
+        }
     }
 }
